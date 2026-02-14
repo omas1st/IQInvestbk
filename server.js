@@ -43,9 +43,9 @@ app.use('/api/notify', notifyRoutes)
 app.use('/api/public', publicRoutes) // <-- mount public endpoints
 app.use('/api/settings', settingsRoutes) // <-- mount settings (public) endpoint
 
-app.get('/', (req, res) => res.send('GainBridge API — running. Visit /api for endpoints.'))
+app.get('/', (req, res) => res.send('IQInvest API — running. Visit /api for endpoints.'))
 app.get('/api', (req, res) => res.json({
-  message: 'GainBridge API root. Available routes: /api/auth, /api/users, /api/admin, /api/notify, /api/public, /api/settings'
+  message: 'IQInvest API root. Available routes: /api/auth, /api/users, /api/admin, /api/notify, /api/public, /api/settings'
 }))
 
 // Health check endpoint for Vercel
